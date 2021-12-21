@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM</title>
+  </head>
+  <body>
+    <header>
+      <section class="header__top">
+        <div class="header__logo">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <h1>N</h1>
+              <!-- <img src="./logo.png" alt="logo">  -->
+            </a>
+          </div>
+        </div>
+        <!-- header__logo -->
+
+        <div class="header__search">
+          <div class="search">
+            <form>
+              <div class="search__drop">
+                <select name="search__select" id="search__select">
+                  <option value="text">글</option>
+                  <option value="blog">블로그</option>
+                  <option value="nickname">별명 아이디</option>
+                </select>
+              </div>
+              <!-- search__drop -->
+
+              <div class="search__input">
+                <input type="text" />
+              </div>
+
+              <div class="search__button">
+                <button><img src="./magnification.png" alt="search_button" /></button>
+              </div>
+            </form>
+
+            <div class="search__total">
+              <a href="#">통합검색</a>
+            </div>
+          </div>
+          <!-- search -->
+        </div>
+        <!-- header__search -->
+
+        <div class="header__auth">
+          <div class="auth">
+            <div class="auth__user">
+              <a href="#"><img src="" alt="" /></a>
+            </div>
+            <!-- user -->
+
+            <div class="auth__alarm">
+              <a href="#"><img src="" alt="" /></a>
+            </div>
+
+            <div class="auth__mail">
+              <a href="#"><img src="" alt="" /></a>
+            </div>
+
+            <div class="auth__total">
+              <a href="#"><img src="" alt="" /></a>
+            </div>
+          </div>
+          <!-- auth -->
+        </div>
+        <!-- header__auth -->
+      </section>
+      <!-- header__top -->
+
+      <section class="header__bottom">
+        <nav>
+          <ul>
+            <li>블로그 홈</li>
+            <li>주제별 보기</li>
+            <li>이달의 블로그</li>
+            <li>공식블로그</li>
+            <li>챌린지 프로그램</li>
+          </ul>
+        </nav>
+
+        <div class="blog-info-link">
+          <ul>
+            <li>블로그 마켓 가입</li>
+            <li>아이템 팩토리</li>
+            <li>블로그팀 공식 블로그</li>
+          </ul>
+        </div>
+        <!-- right-link -->
+      </section>
+      <!-- header__bottom -->
+    </header>
+
+    <main>
+      <section class="blog-top">
+        <div class="hot-topic">
+          <div class="hot-topic__select">
+            <h2><span class="main-title">핫토픽</span>&nbsp;&gt;&nbsp;집밥</h2>
+            <div class="hot-topic__num">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+          </div>
+          <!-- hot-topic__select -->
+
+          <div class="hot-topic__list">
+            <ul>
+              <li>
+                <img src="" alt="" />
+                <div class="list__text">
+                  <p>4인 가족 식비 절약 집밥 기록~</p>
+                </div>
+              </li>
+              <li>
+                <img src="" alt="" />
+                <div class="list__text">
+                  <p>애호박 무 넣은 된장찌개 끓이기</p>
+                </div>
+              </li>
+              <li>
+                <img src="" alt="" />
+                <div class="list__text">
+                  <p>나의 자취 집밥 기록~</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- hot-topic__list -->
+        </div>
+        <!-- hot-topic -->
+
+        <div class="ad">
+          <div class="ad__num">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+
+          <div class="ad__img">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <!-- ad -->
+      </section>
+      <!-- blog-top -->
+
+      <section class="blog-bottom">
+        <div class="neighbor-post">
+          <h2>이웃새글</h2>
+
+          <ul>
+            <li>
+              <div class="user">
+                <div class="user-img">
+                  <img src="" alt="" />
+                </div>
+                <div class="user-post-info">
+                  <span>돌</span>
+                  <span>20시간 전</span>
+                </div>
+              </div>
+              <!-- user -->
+
+              <div class="post-contents">
+                <h3>눈이 내리는 밤</h3>
+                <p>서울에서 내려와 세종에 도착 버스에 내렸을 때 눈이 내리고 있었다.</p>
+                <div class="comment">
+                  <div class="comment__heart"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="user">
+                <div class="user-img">
+                  <img src="" alt="" />
+                </div>
+                <div class="user-post-info">
+                  <span>돌</span>
+                  <span>20시간 전</span>
+                </div>
+              </div>
+              <!-- user -->
+
+              <div class="post-contents">
+                <h3>눈이 내리는 밤</h3>
+                <p>서울에서 내려와 세종에 도착 버스에 내렸을 때 눈이 내리고 있었다.</p>
+                <div class="comment">
+                  <div class="comment__heart"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- neighbor-post -->
+
+        <div class="my-blog"></div>
+      </section>
+      <!-- blog-bottom -->
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
