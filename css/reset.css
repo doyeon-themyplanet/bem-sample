@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+span {
+  display: inline-block;
+}
+
+header,
+nav,
+main,
+footer,
+section,
+article,
+aside {
+  display: block;
+}
