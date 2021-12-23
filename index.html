@@ -4,204 +4,351 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>   
     <title>BEM</title>
   </head>
   <body>
     <header>
       <section class="header__top">
-        <div class="header__logo">
-          <div class="logo">
-            <a href="#" class="logo__link">
-              <h1>N</h1>
-              <!-- <img src="./logo.png" alt="logo">  -->
-            </a>
-          </div>
-        </div>
-        <!-- header__logo -->
+        <div class="confix">
+          <div class="header__top-left">
+            <div class="header__logo">
+              <a href="#" class="logo__link">
+                <img class="logo-img" src="./images/logo.svg" alt="logo"> 
+                <img class="blog-logo-img" src="./images/blog.svg" alt="blog"> 
+                <img class="life-logo-img" src="./images/lifeLogo.svg" alt="lifeLogo"> 
+              </a>
+            </div>
+            <!-- header__logo -->
+    
+            <div class="header__search">
+              <form>
+                <div class="search__drop">
+                  <div class="seleted">
+                    <span>글</span>
+                    <img src="./images/down-arrow.png" alt="down-arrow">
+                  </div>
 
-        <div class="header__search">
-          <div class="search">
-            <form>
-              <div class="search__drop">
-                <select name="search__select" id="search__select">
-                  <option value="text">글</option>
-                  <option value="blog">블로그</option>
-                  <option value="nickname">별명 아이디</option>
-                </select>
+                  <ul class="select_list">
+                      <li class="text active">글</li>
+                      <li class="blog">블로그</li>
+                      <li class="nickname">별명 아이디</li>
+                  </ul>
+                </div>
+                <!-- search__drop -->
+  
+                <div class="search__input">
+                  <span></span>
+                  <input type="text" />
+                </div>
+  
+                <div class="search__button">
+                  <button><img src="./images/search-button.png" alt="search_button" /></button>
+                </div>
+              </form>
+  
+              <div class="search__total">
+                <a href="#">통합검색</a>
               </div>
-              <!-- search__drop -->
-
-              <div class="search__input">
-                <input type="text" />
+            </div>
+            <!-- header__search -->
+          </div> <!-- header__top-left -->
+  
+          <div class="header__top-right">
+            <div class="header__auth">
+              <div class="auth__user">
+                <span class="auth__user-icon"></span>
+                <span><span class="auth__user-name">luke</span> ▾</span>
               </div>
-
-              <div class="search__button">
-                <button><img src="./magnification.png" alt="search_button" /></button>
+              <!-- user -->
+  
+              <div class="auth__alarm">
+                <span class="auth-icon"></span>
               </div>
-            </form>
-
-            <div class="search__total">
-              <a href="#">통합검색</a>
+  
+              <div class="auth__mail">
+                <span class="auth-icon"></span>
+                <span class="mail-num">99+</span>
+              </div>
+  
+              <div class="auth__total">
+                <span class="auth-icon"></span>
+              </div>
             </div>
+            <!-- header__auth -->
           </div>
-          <!-- search -->
-        </div>
-        <!-- header__search -->
-
-        <div class="header__auth">
-          <div class="auth">
-            <div class="auth__user">
-              <a href="#"><img src="" alt="" /></a>
-            </div>
-            <!-- user -->
-
-            <div class="auth__alarm">
-              <a href="#"><img src="" alt="" /></a>
-            </div>
-
-            <div class="auth__mail">
-              <a href="#"><img src="" alt="" /></a>
-            </div>
-
-            <div class="auth__total">
-              <a href="#"><img src="" alt="" /></a>
-            </div>
-          </div>
-          <!-- auth -->
-        </div>
-        <!-- header__auth -->
+          <!-- header__top-right -->
+        </div> <!-- confix -->
       </section>
       <!-- header__top -->
 
       <section class="header__bottom">
-        <nav>
-          <ul>
-            <li>블로그 홈</li>
-            <li>주제별 보기</li>
-            <li>이달의 블로그</li>
-            <li>공식블로그</li>
-            <li>챌린지 프로그램</li>
-          </ul>
-        </nav>
-
-        <div class="blog-info-link">
-          <ul>
-            <li>블로그 마켓 가입</li>
-            <li>아이템 팩토리</li>
-            <li>블로그팀 공식 블로그</li>
-          </ul>
+        <div class="confix">
+          <nav>
+            <ul>
+              <li><a class="active" href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">블로그 홈</a></li>
+              <li><a href="https://section.blog.naver.com/ThemePost.naver?directoryNo=0&activeDirectorySeq=0&currentPage=1">주제별 보기</a></li>
+              <li><span></span></li>
+              <li><a href="https://section.blog.naver.com/ThisMonthDirectory.naver">이달의 블로그</a></li>
+              <li><a href="https://section.blog.naver.com/OfficialBlog.naver?currentPage=1">공식블로그</a></li>
+              <li><a href="https://section.blog.naver.com/HotTopicChallenge.naver?currentPage=1">챌린지 프로그램</a></li>
+            </ul>
+          </nav>
+  
+          <div class="blog-info-link">
+            <ul>
+              <li><a href="https://seller.blog.naver.com/market/joinGuide">블로그 마켓 가입</a></li>
+              <li><a href="http://item2.naver.com/" target="_blank">아이템 팩토리</a></li>
+              <li><a href="https://blog.naver.com/blogpeople" target="_blank">블로그팀 공식 블로그</a></li>
+            </ul>
+          </div>
+          <!-- right-link -->
         </div>
-        <!-- right-link -->
       </section>
       <!-- header__bottom -->
     </header>
 
     <main>
       <section class="blog-top">
-        <div class="hot-topic">
-          <div class="hot-topic__select">
-            <h2><span class="main-title">핫토픽</span>&nbsp;&gt;&nbsp;집밥</h2>
-            <div class="hot-topic__num">
-              <span>1</span>
+        <div class="confix">
+          <div class="hot-topic">
+            <div class="hot-topic__select">
+              <h2><span class="main-title">핫토픽</span>&nbsp;&gt;&nbsp;집밥</h2>
+              <div class="hot-topic__num">
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </div>
+            </div>
+            <!-- hot-topic__select -->
+  
+            <div class="hot-topic__list">
+              <ul>
+                <li>
+                  <img src="./images/hot-topic-rice1.jpg" alt="hot-topic-rice1" />
+                  <div class="list__text">
+                    <p>4인 가족 식비 절약 집밥 기록~</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./images/hot-topic-rice2.jpg" alt="hot-topic-rice2" />
+                  <div class="list__text">
+                    <p>애호박 무 넣은 된장찌개 끓이기</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./images/hot-topic-rice3.jpg" alt="hot-topic-rice3" />
+                  <div class="list__text">
+                    <p>나의 자취 집밥 기록~</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- hot-topic__list -->
+          </div>
+          <!-- hot-topic -->
+  
+          <div class="ad">
+            <div class="ad__num">
+              <span class="active">1</span>
               <span>2</span>
               <span>3</span>
-              <span>4</span>
-              <span>5</span>
+            </div>
+  
+            <div class="ad__img">
+              <img src="./images/ad-1.jpg" alt="ad1" />
             </div>
           </div>
-          <!-- hot-topic__select -->
-
-          <div class="hot-topic__list">
-            <ul>
-              <li>
-                <img src="" alt="" />
-                <div class="list__text">
-                  <p>4인 가족 식비 절약 집밥 기록~</p>
-                </div>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <div class="list__text">
-                  <p>애호박 무 넣은 된장찌개 끓이기</p>
-                </div>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <div class="list__text">
-                  <p>나의 자취 집밥 기록~</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- hot-topic__list -->
-        </div>
-        <!-- hot-topic -->
-
-        <div class="ad">
-          <div class="ad__num">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-          </div>
-
-          <div class="ad__img">
-            <img src="" alt="" />
-          </div>
-        </div>
-        <!-- ad -->
+          <!-- ad -->
+        </div> <!-- confix -->
       </section>
       <!-- blog-top -->
 
       <section class="blog-bottom">
-        <div class="neighbor-post">
-          <h2>이웃새글</h2>
+        <div class="confix">
+          <div class="neighbor-post">
+            <div class="neighbor-filter__top">
+              <h2>이웃새글</h2>
+              <ul class="neighbor-select">
+                <li>
+                  <span>전체이웃</span>
+                  <span><i class="fas fa-chevron-down"></i></span>
+                </li>
+              </ul>
+            </div> <!-- neighbor-filter__top -->
 
-          <ul>
-            <li>
-              <div class="user">
-                <div class="user-img">
-                  <img src="" alt="" />
-                </div>
-                <div class="user-post-info">
-                  <span>돌</span>
-                  <span>20시간 전</span>
-                </div>
-              </div>
-              <!-- user -->
+            <div class="neighbor-filter__bottom">
+              <ul class="neighbor-select">
+                <li>
+                  <span>내 이웃 <span class="neighbor-name">돌</span>님의 이웃을 만나보세요.</span>
+                  <span><i class="fas fa-chevron-down"></i></span>
+                </li>
+              </ul>
+            </div> <!-- neighbor-filter__bottom -->
+            
+            <ul class="post-list">
+              <li>
+                <div class="neighbor-post__text">
+                  <div class="user">
+                    <div class="user-img"></div>
+  
+                    <div class="user-post-info">
+                      <span class="user-name">돌</span>
+                      <span class="post-time">20시간 전</span>
+                    </div>
+                  </div>
+                  <!-- user -->
 
-              <div class="post-contents">
-                <h3>눈이 내리는 밤</h3>
-                <p>서울에서 내려와 세종에 도착 버스에 내렸을 때 눈이 내리고 있었다.</p>
-                <div class="comment">
-                  <div class="comment__heart"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="user">
-                <div class="user-img">
-                  <img src="" alt="" />
-                </div>
-                <div class="user-post-info">
-                  <span>돌</span>
-                  <span>20시간 전</span>
-                </div>
-              </div>
-              <!-- user -->
+                  <div class="post-contents">
+                    <h3>눈이 내리는 밤</h3>
+                    <p>서울에서 내려와 세종에 도착 버스에 내렸을 때 눈이 내리고 있었다. 눈 내리는 밤 도로가에 눈이 소복소복 쌓여간다. 그리고 다음날 아이들과 눈 사람 만들기</p>
 
-              <div class="post-contents">
-                <h3>눈이 내리는 밤</h3>
-                <p>서울에서 내려와 세종에 도착 버스에 내렸을 때 눈이 내리고 있었다.</p>
-                <div class="comment">
-                  <div class="comment__heart"></div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- neighbor-post -->
+                    <div class="comment">
+                      <div class="comment-left">
+                        <div class="comment__heart">
+                          <div class="heart-img"></div>
+                          <span>공감해요</span>
+                          <span class="comment__heart-num">4</span>
+                        </div> <!-- comment__heart -->
+  
+                        <div class="comment__comment">
+                          <div class="comment-img"><i class="fas fa-comment-dots"></i></div>
+                          <span class="comment__comment-num">0</span>
+                        </div> <!-- comment__comment -->
+                      </div> <!-- comment-left -->
+                      
+                      <div class="comment-right">
+                        <div class="comment__share">
+                          <i class="far fa-share-square"></i>
+                        </div>
+                      </div> <!-- comment-right -->
+                    </div>
+                  </div> <!-- post-contents -->
+                </div> <!-- neighbor-post__text -->
 
-        <div class="my-blog"></div>
+                <div class="neighbor-post__img">
+                  <img src="./images/post-img.png" alt="post-img">
+                </div>
+              </li>
+              <li>
+                <div class="neighbor-post__text only-text">
+                  <div class="user">
+                    <div class="user-img"></div>
+  
+                    <div class="user-post-info">
+                      <span class="user-name">돌</span>
+                      <span class="post-time">20시간 전</span>
+                    </div>
+                  </div>
+                  <!-- user -->
+
+                  <div class="post-contents">
+                    <h3>리액트 ES6 화살표 함수</h3>
+                    <p>화살표 함수 (arrow function)이라고 한다. ES6 추가된 표현식을 사용하는 함수로 화살표 기호 => 이 소스는 책에서 Github에 있는 소스 위 소스 중 대표적인 화살표 함수 위 화살표 함수 표현식이 이 것과 같다. 훨씬 간결하고 편하게 쓰여지는 ES6 문법의 화살표 함수</p>
+                    <div class="comment">
+                      <div class="comment-left">
+                        <div class="comment__heart">
+                          <div class="heart-img"></div>
+                          <span>공감해요</span>
+                          <span class="comment__heart-num">4</span>
+                        </div> <!-- comment__heart -->
+  
+                        <div class="comment__comment">
+                          <div class="comment-img"><i class="fas fa-comment-dots"></i></div>
+                          <span class="comment__comment-num">0</span>
+                        </div> <!-- comment__comment -->
+                      </div> <!-- comment-left -->
+                      
+                      <div class="comment-right">
+                        <div class="comment__share">
+                          <i class="far fa-share-square"></i>
+                        </div>
+                      </div> <!-- comment-right -->
+                    </div>
+                  </div> <!-- post-contents -->
+                </div> <!-- neighbor-post__text -->
+              </li>
+            </ul>
+          </div>
+          <!-- neighbor-post -->
+  
+          <div class="my-blog">
+            <div class="user-info">
+              <div class="user-icon"></div>
+
+              <div class="user-id-visit">
+                <div class="user-id">
+                  <span>gathering11</span>
+                </div>
+
+                <div class="user-visit">
+                  <span>오늘 <span class="visit-num">0</span>명 방문 &gt;</span>
+                </div>
+              </div> <!-- user-id-visit -->
+
+              <div class="log-out">
+                <button>로그아웃</button>
+              </div>
+            </div> <!-- user-info -->
+
+            <div class="my-blog__link">
+              <button class="blog-button">내 블로그</button>
+              <button class="write-button"><span class="write-icon"><i class="fas fa-pen"></i></spanc> 글쓰기</button>
+            </div>
+
+            <div class="my-blog__list">
+              <ul class="list-title">
+                <li class="active">
+                  <h4>내 소식</h4>
+                </li>
+                <li>
+                  <h4>내 활동</h4>
+                </li>
+                <li>
+                  <h4>이웃 목록</h4>
+                </li>
+              </ul>
+
+              <ul class="list-contents">
+                <li class="show">
+                  <span>새로운 소식이 없습니다.</span>
+                </li>
+                <li>
+                  <span>새로운 소식이 없습니다.</span>
+                </li>
+                <li>
+                  <span>새로운 소식이 없습니다.</span>
+                </li>
+              </ul>
+            </div> <!-- my-blog__list -->
+
+            <div class="from-blog">
+              <div class="from-blog-text">
+                <span>From, 블로그씨</span>
+                <p>블로그씨는 곧 있을 크리스마스를 위해 미니 트리를 만들었어요~ 내가 만든 소품 DIY를 사진과 함께 공유해 주세요!</p>
+              </div> <!-- from-blog-text -->
+
+              <div class="from-blog-bottom">
+                <div class="question">
+                  <span>질문에 답하기 &gt;</span>
+                </div>
+
+                <div class="setting">
+                  <i class="fas fa-cog"></i>
+                </div>
+              </div> <!-- from-blog-bottom -->
+            </div> <!-- from-blog -->
+
+            <div class="move-btn">
+              <span>&lt;</span>
+              <span>&gt;</span>
+            </div>
+          </div> <!-- my-blog -->
+        </div> <!-- confix -->
       </section>
       <!-- blog-bottom -->
     </main>
