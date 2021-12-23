@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  letter-spacing: -1px;
+}
+
 ul,
 ol,
 li {
@@ -17,6 +21,10 @@ a {
 
 span {
   display: inline-block;
+}
+
+button {
+  cursor: pointer;
 }
 
 header,
