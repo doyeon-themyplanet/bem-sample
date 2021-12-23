@@ -1,8 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  letter-spacing: -1px;
 }
 
 ul,
@@ -18,6 +21,10 @@ a {
 
 span {
   display: inline-block;
+}
+
+button {
+  cursor: pointer;
 }
 
 header,
