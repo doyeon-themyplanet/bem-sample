@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <script src="./js/index.js" defer></script>
     <title>BEM</title>
   </head>
   <body>
@@ -26,12 +27,12 @@
             <div class="header__search">
               <form>
                 <div class="search__drop">
-                  <div class="seleted">
+                  <div class="selected folded">
                     <span>글</span>
                     <img src="./images/down-arrow.png" alt="down-arrow">
                   </div>
 
-                  <ul class="select_list">
+                  <ul class="select__list">
                       <li class="text active">글</li>
                       <li class="blog">블로그</li>
                       <li class="nickname">별명 아이디</li>
@@ -115,7 +116,7 @@
         <div class="confix">
           <div class="hot-topic">
             <div class="hot-topic__select">
-              <h2><span class="main-title">핫토픽</span>&nbsp;&gt;&nbsp;집밥</h2>
+              <h2><span class="hot-topic__main-title">핫토픽</span>&nbsp;<span class="hot-topic__arrow"> &gt; </span>&nbsp;집밥</h2>
               <div class="hot-topic__num">
                 <span class="active">1</span>
                 <span>2</span>
@@ -131,20 +132,47 @@
                 <li>
                   <img src="./images/hot-topic-rice1.jpg" alt="hot-topic-rice1" />
                   <div class="list__text">
-                    <p>4인 가족 식비 절약 집밥 기록~</p>
-                  </div>
+                    <p class="list__text-title">4인 가족 식비 절약 집밥 기록~</p>
+
+                    <div class="list__hide-text">
+                      <div class="post-icon">
+                        <span class="post-icon-img"></span>
+                        <span class="post-icon-name">부자엄마</span>
+                      </div>
+
+                      <p>요즘 한 주 한 주 집밥 기록을 하고 있다. 일주일 동안 뭘 먹었는지 확인하고 영양적으로 식비 쪽으로 부족하거나 과한 건 없는지...</p>
+                    </div> <!-- list__hide-text -->
+                  </div> <!-- list__text -->
                 </li>
                 <li>
                   <img src="./images/hot-topic-rice2.jpg" alt="hot-topic-rice2" />
                   <div class="list__text">
-                    <p>애호박 무 넣은 된장찌개 끓이기</p>
-                  </div>
+                    <p class="list__text-title">애호박 무 넣은 된장찌개 끓이기</p>
+
+                    <div class="list__hide-text">
+                      <div class="post-icon">
+                        <span class="post-icon-img"></span>
+                        <span class="post-icon-name">수동샘</span>
+                      </div>
+
+                      <p>돌솥비빔밥과 매콤소고기뭇국 햄 감자볶음, 감자조림, 메추리알 장조림 우리 부부는 햄을 안 좋아하는데 명절에 들어온 햄 처리용...</p>
+                    </div> <!-- list__hide-text -->
+                  </div> <!-- list__text -->
                 </li>
                 <li>
                   <img src="./images/hot-topic-rice3.jpg" alt="hot-topic-rice3" />
                   <div class="list__text">
-                    <p>나의 자취 집밥 기록~</p>
-                  </div>
+                    <p class="list__text-title">나의 자취 집밥 기록~</p>
+
+                    <div class="list__hide-text">
+                      <div class="post-icon">
+                        <span class="post-icon-img"></span>
+                        <span class="post-icon-name">아브</span>
+                      </div>
+
+                      <p>#집밥기록 나의 집밥 기록 단배추 된장 비빔밥과 진미채무침, 그리고 단백질 보충용 삶은 달걀 단배추 된장 비빔밥은 정말 맛...</p>
+                    </div> <!-- list__hide-text -->
+                  </div> <!-- list__text -->
                 </li>
               </ul>
             </div>
@@ -160,7 +188,7 @@
             </div>
   
             <div class="ad__img">
-              <img src="./images/ad-1.jpg" alt="ad1" />
+              <a href="https://blog.naver.com/blogpeople/222599846369" target="_blank"><img src="./images/ad-1.jpg" alt="ad1" /></a>
             </div>
           </div>
           <!-- ad -->
